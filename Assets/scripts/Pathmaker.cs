@@ -22,17 +22,16 @@ public class Pathmaker : MonoBehaviour {
 
 	void Update () {
 //		If counter is less than 50, then:
-//		Generate a random number from 0.0f to 1.0f;
-//		If random number is less than 0.25f, then rotate myself 90 degrees;
-//			... Else if number is 0.25f-0.5f, then rotate myself -90 degrees;
-//			... Else if number is 0.99f-1.0f, then instantiate a pathmakerSpherePrefab clone at my current position;
-//		// end elseIf
+//			Generate a random number from 0.0f to 1.0f;
+//			If random number is less than 0.25f, then rotate myself 90 degrees;
+//				... Else if number is 0.25f-0.5f, then rotate myself -90 degrees;
+//				... Else if number is 0.99f-1.0f, then instantiate a pathmakerSpherePrefab clone at my current position;
+//			// end elseIf
 
-//		Instantiate a floorPrefab clone at current position;
-
-//		Move forward ("forward" in local space, relative to the direction I'm facing) by 5 units;
+//			Instantiate a floorPrefab clone at current position;
+//			Move forward ("forward", as in, the direction I'm currently facing) by 5 units;
 //			Increment counter;
-//			Else:
+//		Else:
 //			Destroy my game object; 		// self destruct if I've made enough tiles already
 	}
 
