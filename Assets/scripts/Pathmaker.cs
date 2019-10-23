@@ -53,7 +53,7 @@ public class Pathmaker : MonoBehaviour {
 //          - hint 1: a "static" variable is like a global variable, there's only 1 instance of that variable shared across the entire game / all objects
 //	    - hint 2: declare a "public static int" counter, increment each time you instantiate a floor tile... like "globalTileCount++"
 //          - hint 3: if there are already too many tiles, then self-destruct without spawning new floor tiles... like "if(globalTileCount > 500)" ... "Destroy(gameObject);"
-
+//          - note: a static var will persist beyond scene changes! you have to reset the variable manually!
 
 
 // STEP 4: ======================================================================================
