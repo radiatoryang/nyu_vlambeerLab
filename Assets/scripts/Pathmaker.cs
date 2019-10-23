@@ -50,7 +50,9 @@ public class Pathmaker : MonoBehaviour {
 //	- put Pathmaker.cs on a sphere, configure all the prefabs in the Inspector, and test it to make sure it works
 //	STABILIZE: 
 //	- code it so that all the Pathmakers can only spawn a grand total of 500 tiles in the entire world; how would you do that?
-//	- (hint: declare a "public static int" and have each Pathmaker check this "globalTileCount", somewhere in your code? if there are already enough tiles, then maybe the Pathmaker could Destroy my game object
+//          - hint 1: a "static" variable is like a global variable, there's only 1 instance of that variable shared across the entire game / all objects
+//	    - hint 2: declare a "public static int" counter, increment each time you instantiate a floor tile... like "globalTileCount++"
+//          - hint 3: if there are already too many tiles, then self-destruct without spawning new floor tiles... like "if(globalTileCount > 500)" ... "Destroy(gameObject);"
 
 
 
